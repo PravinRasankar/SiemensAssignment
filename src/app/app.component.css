@@ -1,0 +1,278 @@
+.listSection{
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+ul{
+    list-style-type:none;
+    display: inline;
+}
+li.title {
+    color: white;
+    border: 0px;
+    margin: 0;
+    background-color: #1976d2;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -18px;
+}
+li {
+    padding: 0.5em;
+    border-bottom: 1px solid grey;
+}
+li:hover {
+    background-color: #bdbcbcf5;
+}
+.selected{
+    background-color: #a59292e8;
+    color: white;
+}
+.listAsection, .listBsection{
+    flex: 15%;
+}
+.listSection div {
+    vertical-align: top;
+    border: 1px solid grey;
+    border-top: 0px;
+}
+
+.actionSection{
+    margin-top: 10%;
+    border: 0px !important;
+    flex: 10%;
+}
+button.actionButton {
+    display: block;
+    margin: 0 7.5%;
+    width: 85%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    background-color: #1976d2;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+button.actionButton:hover {
+    background-color: #0f59a2;
+}
+.header {
+    background-color: #1976d2;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5em;
+}
+.smallScreen{
+    display: none;
+}
+.notSmallScreen{
+    display: block;
+}
+
+.alertBox{
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    border: 1px solid grey;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 20;
+}
+.alertTitle{
+    background-color: #f70e0e;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 2% 4%;
+}
+.alertTitle .fa {
+    float: right;
+}
+.messageText{
+    padding: 4%;
+}
+.buttonAction .actionButton {
+    width: 40% !important;
+    display: inline !important;
+    margin: 0 !important;
+    margin-left: 7% !important;
+}
+.alertBox.deleteAlert {
+    width: 25vw;
+    height: 20vh;
+}
+.commonAlert button.actionButton{
+    background-color: #f70e0e;
+}
+.commonAlert button.actionButton:hover{
+    background-color: #df0404;
+}
+.alertBox.addItemAlert {
+    width: 30vw;
+    height: 30vh;
+    top: 16%;
+    left: 14%;
+    z-index: 10 !important;
+}
+
+.addItemAlert .alertTitle{
+    background-color: #1976d2 !important;
+}
+.addItemAlert .messageText{
+    padding: 2% 4%;
+}
+
+.addItemSection div {
+    padding: 1% 4%;
+}
+.addItemSection label {
+    width: 10vw;
+    display: inline-block;
+}
+.addItemSection select{
+    width: 10.5vw;
+    padding: 0.1em;
+}
+.addItemSection input{
+    width: 10vw;
+    padding: 0.1em;
+}
+.addItemSection .buttonAction {
+    margin-top: 2%;
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) { 
+    .alertBox{
+        top: 17%;
+        left: 16%;
+        width: 30vw;
+        height: 10vh;
+    }
+    .buttonAction .actionButton {
+        width: 40% !important;
+        display: inline !important;
+        margin: 0 !important;
+        margin-left: 7% !important;
+    }
+    .alertBox.deleteAlert {
+        width: 30vw;
+        height: 20vh;
+    }
+    .alertBox.addItemAlert {
+        width: 45vw;
+        height: 30vh;
+    }
+    .addItemSection label {
+        width: 13vw;
+    }
+    .addItemSection select{
+        width: 15.5vw;
+    }
+    .addItemSection input{
+        width: 15vw;
+    }
+    
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .listSection{
+        width:70%;
+    }
+    .listAsection, .listBsection{
+        flex: 20%;
+    }
+    
+    .actionSection{
+        flex: 20%;
+        margin-top: 20%;
+    }
+    .alertBox{
+        top: 15%;
+        left: 22%;
+        width: 35vw;
+        height: 7vh;
+    }
+    .buttonAction .actionButton {
+        width: 40% !important;
+        display: inline !important;
+        margin: 0 !important;
+        margin-left: 7% !important;
+    }
+    .alertBox.deleteAlert {
+        width: 35vw;
+        height: 14vh;
+    }
+    .alertBox.addItemAlert {
+        width: 45vw;
+        height: 20vh;
+    }
+    .addItemSection label {
+        width: 16vw;
+    }
+    .addItemSection select{
+        width: 20.8vw;
+    }
+    .addItemSection input{
+        width: 20vw;
+    }
+}
+@media screen and (max-device-width: 480px) { 
+    .listSection{
+        width:100%;
+        margin-left: 0;
+    }
+    .listAsection, .listBsection{
+        flex: 20%;
+    }
+    
+    .actionSection{
+        flex: 5%;
+        margin-top: 20%;
+    }
+    button.actionButton{
+        padding: 0.5em;
+    }
+    .smallScreen .fa {
+        font-size: 20px;
+    }
+    .smallScreen{
+        display: block;
+    }
+    .notSmallScreen{
+        display: none;
+    }
+    .alertBox{
+        top: 20%;
+        left: 22%;
+        width: 70vw;
+        height: 10vh
+    }
+    .buttonAction .actionButton {
+        width: 40% !important;
+        display: inline !important;
+        margin: 0 !important;
+        margin-left: 7% !important;
+    }
+    .alertBox.deleteAlert {
+        width: 70vw;
+        height: 20vh;
+    }
+    .alertBox.addItemAlert {
+        width: 75vw;
+        height: 25vh;
+    }
+    .addItemSection label {
+        width: 31vw;
+    }
+    .addItemSection select{
+        width: 37.8vw;
+    }
+    .addItemSection input{
+        width: 36vw;
+    }
+}
